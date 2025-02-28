@@ -1,0 +1,59 @@
+@media (prefers-color-scheme: dark) {
+  .page {
+    --gray-rgb: 255, 255, 255;
+    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
+    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
+
+    --button-primary-hover: #ccc;
+    --button-secondary-hover: #1a1a1a;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 160px 0;
+}
+
+.header {
+  background-color: #ff8b00;
+  border-bottom: 3px solid #000000;
+  min-height: 104px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.logo {
+  background-image: url('../public/logo/BTY_LOGO_TRANSPARENT.png');
+  width: 300px;
+  height: 54px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 32px;
+    padding-bottom: 80px;
+  }
+
+  .logo {
+    width: 200px;
+    height: 46px;
+  }
+
+  .main {
+    padding: 128px 12px;
+  }
+
+  .img {
+    padding-bottom: 16px;
+  }
+}

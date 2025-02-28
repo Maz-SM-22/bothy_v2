@@ -1,0 +1,52 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 32px;
+  width: 96%;
+}
+
+.input, .textarea {
+  all: unset;
+  width: 100%;
+  padding: 8px;
+  font-size: 24px;
+  border: 3px solid #000000;
+  color: black;
+  min-width: 100%;
+  background-color: #e8e8e8;
+}
+
+.textarea {
+    min-height: 200px;
+}
+
+.input::placeholder, .textarea::placeholder {
+  color: black;
+}
+
+.button {
+  background-color: #ff8b00;
+  border: 3px solid #000000;
+  padding: 8px 48px;
+  font-size: 24px;
+  color: black;
+}
+
+.button:hover {
+  background-color: #00adef;
+}
+
+@media (max-width: 767px) {
+    .form {
+        padding: 16px 0;
+        font-size: 1.5rem;
+    }
+
+    .input, .textarea {
+        min-width: 100%;
+        font-size: 1.5rem;
+    }
+}

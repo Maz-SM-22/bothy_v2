@@ -1,0 +1,178 @@
+.pageContainer {
+    width: 996px;
+    background-color: white;
+    border: 3px solid black;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    border-top: none;
+    padding-bottom: 48px;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px;
+}
+
+.pageHeader {
+    border: 3px solid black;
+    background-color: #39b54a;
+    padding: 16px 24px;
+    width: 996px;
+    color: black;
+}
+
+.line {
+    border: 1px solid black;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid black;
+}
+
+.dateLocationContainer {
+    display: flex;
+    gap: 32px;
+}
+
+.iconContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.5rem;
+}
+
+.descriptionContainer {
+    font-size: 1.2rem;
+}
+
+.quotesContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    padding: 24px 0;
+}
+
+.quote {
+    border: 2px solid black;
+    background-color: #f2f2f2;
+    padding: 24px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.quoteName {
+    text-align: right;
+}
+
+.quoteHeader {
+    background-color: #00adef;
+    padding: 16px 8px 12px;
+    color: black;
+    border: 2px solid black;
+    border-bottom: none;
+}
+
+.line {
+    border: 1px solid black;
+}
+
+.quote > p {
+    padding-top: 24px;
+    font-size: 1.2rem;
+}
+
+.linksContainer {
+    display: flex;
+    gap: 24px;
+    padding: 24px 0;
+    font-size: 1.2rem;
+}
+
+.linksTitle {
+    font-size: 1.5rem;
+}
+
+.link {
+    background-color: #fff225;
+    color: black;
+    padding: 8px 16px;
+    cursor: pointer;
+    border: 2px solid #000000;
+    width: fit-content;
+    font-size: 1.2rem;
+}
+
+.link > a {
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover {
+    background-color: rgb(238, 42, 122);
+}
+
+.videoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.imageCarouselContainer {
+    padding-bottom: 32px;
+}
+
+.descriptionContainer ul {
+    list-style-type: disc;
+    padding-left: 36px;
+}
+
+.descriptionContainer li {
+    text-align: justify;
+}
+
+.descriptionContainer * {
+    padding-bottom: 16px;
+}
+
+@media (max-width: 1000px) {
+    .pageContainer {
+        width: 90%;
+        overflow: hidden;
+    }
+
+    .pageHeader {
+        width: 90%;
+    }
+
+    .video {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .dateLocationContainer {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .quotesContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .pageHeader, .pageContainer {
+        width: 98%;
+    }
+}

@@ -1,0 +1,129 @@
+.projectWrapper {
+    width: 996px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.projectWrapper > div {
+    width: 100%;
+}
+
+.projectHeader {
+    border: 3px solid #000000;
+    padding: 16px 24px;
+    background-color: #39b54a;
+    width: 100%;
+}
+
+.heading {
+    color: black;
+}
+
+.underline {
+    border: 1px solid #000000;
+    width: 100%;
+}
+
+.projectsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+}
+
+.projectCard {
+    background-color: white;
+    border: 3px solid #000000;
+    color: black;
+}
+
+.projectCard a {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.h3 {
+    color: black;
+}
+
+.textContainer {
+    padding: 24px;
+    color: black;
+}
+
+.iconsContainer {
+    display: flex;
+    gap: 16px;
+    padding: 16px 0;
+}
+
+.iconContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 0;
+}
+
+.flexDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.seeMoreButton {
+    background-color: #fff225;
+    color: black;
+    padding: 8px 16px;
+    cursor: pointer;
+    border: 2px solid #000000;
+    width: fit-content;
+    margin-bottom: 24px;
+    margin-left: 24px;
+    font-size: 1.2rem;
+}
+
+.seeMoreButton:hover {
+    background-color: rgb(238, 42, 122);
+}
+
+.image {
+    border-left: 3px solid #000000;
+}
+
+@media (max-width: 1000px) {
+    .projectWrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 767px) {
+    .projectCard a {
+        flex-direction: column-reverse;
+        gap: 16px;
+    }
+
+    .projectWrapper {
+        width: 98%;
+    }
+
+    .iconsContainer {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .seeMoreButton {
+        display: flex;
+        justify-content: center;
+        width: calc(100% - 48px);
+        margin-left: 24px;
+    }
+
+    .image {
+        border-left: none;
+        border-bottom: 3px solid #000000;
+        width: 100%;
+    }
+}
